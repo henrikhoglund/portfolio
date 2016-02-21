@@ -246,7 +246,7 @@ nav ul {
       text-decoration: none; }
 
 .mainContainer {
-  max-width: 1920px;
+  max-width: 1680px;
   margin: 0 auto; }
 
 .aboutContainer {
@@ -407,7 +407,7 @@ nav ul {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.25); }
+      background-color: rgba(0, 0, 0, 0.2); }
     @media (max-width: 480px) {
       .image-element .image-holder {
         min-height: 500px; } }
