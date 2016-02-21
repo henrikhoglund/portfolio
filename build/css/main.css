@@ -351,15 +351,15 @@ nav ul {
   .roundedBtn:hover {
     color: #ffffff;
     background-color: #383838;
-    transition: background-color 0.7s ease-in-out; }
+    transition: background-color 0.5s ease-in-out; }
 
 .image-element {
   max-width: 1680px;
   overflow: hidden;
   width: 100%; }
-  .image-element:hover:first-child .image-holder {
-    transform: scale(1.03, 1.03); }
-    .image-element:hover:first-child .image-holder:after {
+  .image-element:hover .image-holder {
+    transform: scale(1.02, 1.02); }
+    .image-element:hover .image-holder:after {
       background-color: transparent; }
   .image-element .image-holder {
     width: 100%;
