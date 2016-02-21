@@ -354,11 +354,33 @@ nav ul {
     transition: background-color 0.5s ease-in-out; }
 
 .image-element {
+  position: relative;
   max-width: 1680px;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  transition: transform 2s ease-in-out; }
+  .image-element h2 {
+    color: #ffffff;
+    font-family: calibre-regular;
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4.2rem;
+    display: block;
+    box-sizing: border-box;
+    letter-spacing: -0.2rem;
+    font-weight: 500; }
+    @media (max-width: 480px) {
+      .image-element h2 {
+        font-size: 2.5rem;
+        letter-spacing: -0.1rem; } }
   .image-element:hover .image-holder {
-    transform: scale(1.02, 1.02); }
+    transform: scale(1.025, 1.025); }
     .image-element:hover .image-holder:after {
       background-color: transparent; }
   .image-element .image-holder {
@@ -371,7 +393,7 @@ nav ul {
     display: table;
     position: relative;
     -webkit-backface-visibility: hidden;
-    transition: transform 3s ease-in-out;
+    transition: transform 2s ease-in-out;
     background-repeat: no-repeat; }
     .image-element .image-holder.mcdonaldsCover {
       background-image: url(../public/images/mcdonaldsCover.jpg); }
@@ -379,35 +401,16 @@ nav ul {
       background-image: url(../public/images/heinekenCover.jpg); }
     .image-element .image-holder.falsterboCover {
       background-image: url(../public/images/falsterboCover.jpg); }
+    .image-element .image-holder:after {
+      transition: background-color 2s ease-out;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); }
     @media (max-width: 480px) {
       .image-element .image-holder {
-        min-height: 500px; }
-        .image-element .image-holder.mcdonaldsCover {
-          background-image: url(../public/images/mcdonaldsCover.jpg); }
-        .image-element .image-holder.heinekenCover {
-          background-image: url(../public/images/heinekenCover.jpg); }
-        .image-element .image-holder.falsterboCover {
-          background-image: url(../public/images/falsterboCover.jpg); } }
-    .image-element .image-holder .hero-desc {
-      position: relative;
-      display: table-cell;
-      vertical-align: middle;
-      width: 100%;
-      text-align: center; }
-      .image-element .image-holder .hero-desc h2 {
-        font-size: 4.7rem;
-        display: block;
-        box-sizing: border-box;
-        letter-spacing: -0.2rem;
-        margin: 0;
-        padding: 0;
-        font-weight: 500;
-        color: #ffffff;
-        font-family: calibre-regular; }
-        @media (max-width: 480px) {
-          .image-element .image-holder .hero-desc h2 {
-            font-size: 2.5rem;
-            letter-spacing: -0.1rem; } }
+        min-height: 500px; } }
 
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
