@@ -90,7 +90,7 @@ h1, h2, h3, h4, p, ul {
   margin: 1rem 0; }
 
 h1 {
-  font-family: calibre-regular;
+  font-family: calibre-regular, helvetica, sans-serif;
   text-transform: none;
   font-size: 4.375rem;
   font-weight: 400;
@@ -100,14 +100,14 @@ h1 {
   margin-top: -0.5em; }
 
 h2 {
-  font-family: calibre-regular;
+  font-family: calibre-regular, helvetica, sans-serif;
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 200;
   color: #383838; }
 
 h3 {
-  font-family: calibre-regular;
+  font-family: calibre-regular, helvetica, sans-serif;
   font-size: 1.325rem;
   word-spacing: 2px;
   font-weight: 500;
@@ -136,9 +136,12 @@ ul {
   list-style: none; }
 
 li {
-  font-family: calibre-regular;
+  font-family: calibre-regular, helvetica, sans-serif;
   font-size: 1.2rem;
   line-height: 1.5; }
+
+.center {
+  text-align: center; }
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -241,7 +244,7 @@ nav ul {
       nav ul li {
         padding-left: 2em; } }
     nav ul li a {
-      font-family: calibre-regular;
+      font-family: calibre-regular, helvetica, sans-serif;
       color: #ffffff;
       text-decoration: none; }
 
@@ -271,6 +274,8 @@ nav ul {
     background-image: url(../public/images/heinekenCover.jpg); }
   .cover.falsterboCover {
     background-image: url(../public/images/falsterboCover.jpg); }
+  .cover.laddkollCover {
+    background-image: url(../public/images/laddkollCover.jpg); }
   @media (max-width: 480px) {
     .cover {
       min-height: 550px; } }
@@ -307,7 +312,7 @@ nav ul {
         font-size: 2rem; } }
   .postCenter h4 {
     font-size: 1.4rem;
-    font-family: calibre-regular;
+    font-family: calibre-regular, helvetica, sans-serif;
     max-width: 450px;
     line-height: 1.6; }
     @media (max-width: 480px) {
@@ -345,7 +350,7 @@ nav ul {
   color: #383838;
   padding: 15px 10px 10px 10px;
   max-width: 250px;
-  font-family: calibre-regular;
+  font-family: calibre-regular, helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: regular; }
   .roundedBtn:hover {
@@ -361,7 +366,7 @@ nav ul {
   transition: transform 2s ease-in-out; }
   .image-element h2 {
     color: #ffffff;
-    font-family: calibre-regular;
+    font-family: calibre-regular, helvetica, sans-serif;
     position: absolute;
     z-index: 10;
     padding: 0;
@@ -401,6 +406,8 @@ nav ul {
       background-image: url(../public/images/heinekenCover.jpg); }
     .image-element .image-holder.falsterboCover {
       background-image: url(../public/images/falsterboCover.jpg); }
+    .image-element .image-holder.laddkollCover {
+      background-image: url(../public/images/laddkollCover.jpg); }
     .image-element .image-holder:after {
       transition: background-color 2s ease-out;
       content: "";
